@@ -10,11 +10,11 @@ const MyCard = ({ chef }) => {
     <div className="col-md-4 mb-2">
       <Col>
         <Card>
-          <div>
+          <div className="d-flex justify-content-center">
             <Card.Img className="w-50" variant="top" src={chef.chefPicture} />
           </div>
-          <Card.Body>
-            <Card.Title>{chef.chefName}</Card.Title>
+          <Card.Body className="text-center">
+            <Card.Title className="text-success">{chef.chefName}</Card.Title>
             <Card.Text>
               {chef.yearsOfExperience} years of experience,{" "}
               {chef.numberOfRecipes} recipes

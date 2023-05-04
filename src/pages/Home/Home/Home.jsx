@@ -4,6 +4,7 @@ import { useState } from "react";
 import Footer from "../../shared/Footer/Footer";
 import Banner from "../Banner/Banner";
 import MyCard from "../Card/MyCard";
+import HowItWorks from "../HowItWorks/HowItWorks";
 import Testimonies from "../Testimonies/Testimonies";
 
 const Home = () => {
@@ -17,11 +18,13 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <div className="row container my-5">
+      <div className="row container my-5 mx-auto">
+        <h2 className="text-success text-center">Our Chefs:</h2>
         {chefs.map((chef) => (
           <MyCard key={chef.id} chef={chef}></MyCard>
         ))}
       </div>
+      <HowItWorks></HowItWorks>
       <Testimonies></Testimonies>
       <Footer></Footer>
     </div>

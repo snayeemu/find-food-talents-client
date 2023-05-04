@@ -4,6 +4,7 @@ import { useState } from "react";
 import Footer from "../../shared/Footer/Footer";
 import Banner from "../Banner/Banner";
 import MyCard from "../Card/MyCard";
+import Testimonies from "../Testimonies/Testimonies";
 
 const Home = () => {
   const [chefs, setChefs] = useState([]);
@@ -21,6 +22,7 @@ const Home = () => {
           <MyCard key={chef.id} chef={chef}></MyCard>
         ))}
       </div>
+      <Testimonies></Testimonies>
       <Footer></Footer>
     </div>
   );

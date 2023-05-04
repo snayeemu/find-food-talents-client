@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import Footer from "../../shared/Footer/Footer";
 import Banner from "../Banner/Banner";
 import MyCard from "../Card/MyCard";
 import HowItWorks from "../HowItWorks/HowItWorks";
@@ -26,7 +25,6 @@ const Home = () => {
       </div>
       <HowItWorks></HowItWorks>
       <Testimonies></Testimonies>
-      <Footer></Footer>
     </div>
   );
 };

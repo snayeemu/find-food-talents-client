@@ -17,12 +17,12 @@ const Banner = () => {
               more.
             </p>
             <Link to="/blog">
-              <Button variant="primary" size="lg" className="mt-3">
+              <Button variant="success" size="lg" className="mt-3">
                 Learn More
               </Button>
             </Link>
           </Col>
-          <Col className="text-end" md={5}>
+          <Col className="" md={5}>
             <img
               src={
                 "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=377&q=80"

@@ -1,9 +1,26 @@
 import React from "react";
 import { Link, useLoaderData } from "react-router-dom";
-import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  Image,
+  Toast,
+  Button,
+} from "react-bootstrap";
+import { useState } from "react";
 
 const ShowRecipes = () => {
   const chef = useLoaderData();
+  const [clickedIndex, setClickedIndex] = useState([]);
+  const [show, setShow] = useState(false);
+
+  const handleFavoriteClick = (index) => {
+    setClickedIndex([...clickedIndex, index]);
+    setShow(true);
+  };
+
   const { chefPicture, chefName, bio, likes, numberOfRecipes } = chef;
   return (
     <div>
@@ -46,6 +63,29 @@ const ShowRecipes = () => {
         </Row>
       </Card>
       <Container className="my-3 ">
+        <Row>
+          <Col xs={6}>
+            <Toast
+              onClose={() => setShow(false)}
+              show={show}
+              delay={3000}
+              autohide
+            >
+              <Toast.Header>
+                <img
+                  src="holder.js/20x20?text=%20"
+                  className="rounded me-2"
+                  alt=""
+                />
+                <strong className="me-auto">Congratulations</strong>
+                <small>Just Now</small>
+              </Toast.Header>
+              <Toast.Body>
+                You added this recipe to your favorites list.
+              </Toast.Body>
+            </Toast>
+          </Col>
+        </Row>
         <h2 className="text-success ">Recipes:</h2>
         <Row xs={1} md={2} lg={3} className="g-4">
           {chef.recipes.map((recipe, index) => (
@@ -62,7 +102,11 @@ const ShowRecipes = () => {
                     ))}
                   </div>
                   <div className="text-center mt-3 ">
-                    <button className="btn btn-outline-success ">
+                    <button
+                      onClick={() => handleFavoriteClick(index)}
+                      className="btn btn-outline-success "
+                      disabled={clickedIndex.includes(index)}
+                    >
                       Favorite
                     </button>
                   </div>

@@ -4,6 +4,8 @@ import EmailPassRegistration from "../pages/EmailPassRegistration/EmailPassRegis
 import Home from "../pages/Home/Home/Home";
 import EmailLogin from "../pages/Login/EmaillLogin/EmailLogin";
 import LoginOptions from "../pages/Login/LoginOptions/LoginOptions";
+import NotFound from "../pages/NotFound/NotFound";
+import Footer from "../pages/shared/Footer/Footer";
 import NavigationBar from "../pages/shared/NavigationBar/NavigationBar";
 import ShowRecipes from "../pages/ShowRecipes/ShowRecipes";
 import PrivateRoute from "./PrivateRoute";
@@ -50,7 +52,8 @@ const router = createBrowserRouter([
     element: (
       <>
         <NavigationBar></NavigationBar>
-        <h1>4004</h1>
+        <NotFound></NotFound>
+        <Footer></Footer>
       </>
     ),
   },

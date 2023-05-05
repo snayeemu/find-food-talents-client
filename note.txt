@@ -40,13 +40,13 @@ task:
                 chef picture, name, short bio/description, likes, number of recipes and years of experience.
                 we can have duplicate recipes
                 will have a favorite button 
-    12. favorite button
-        tost will say something,
-        then button will be disabled --> no need to store
-    13. add a data loading spinner
+    12. favorite button --> done
+        tost will say something, --> done
+        then button will be disabled --> no need to store --> done
+    13. add a data loading spinner --> done
     14. add a 404 page --> add a image in the 404 page 
-    15. hide firebase from github
-    16. add 'active route' to indicate the route which you are visiting 
+    15. hide firebase from github --> done
+    16. add 'active route' to indicate the route which you are visiting  -->
 
 
 Bonus:

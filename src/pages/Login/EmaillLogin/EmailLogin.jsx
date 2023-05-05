@@ -43,7 +43,8 @@ const EmailLogin = () => {
       </Form>
       <p>
         <small>
-          Don't an account? <Link to="/email-pass-reg">Please Register</Link>
+          Don't have an account?{" "}
+          <Link to="/email-pass-reg">Please Register</Link>
         </small>
       </p>
     </div>

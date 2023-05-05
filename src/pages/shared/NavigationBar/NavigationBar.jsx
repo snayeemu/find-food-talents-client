@@ -1,16 +1,21 @@
 import React, { useState } from "react";
+import { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link, useNavigate, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../contexts/AuthContext";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
-  const 
-  
-  const test = (active) => {
-    console.log(active);
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user?.email, user?.displayName);
+
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((err) => console.log(err.message));
   };
   return (
     <div className="position-relative">
@@ -57,16 +62,29 @@ const NavigationBar = () => {
               </NavLink>
             </Nav>
             <Nav>
-              <img
-                className="nav-img-width img-fluid rounded-circle "
-                src={
-                  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                }
-                alt=""
-              />
-              <Link to="/login">
-                <button className="btn  ms-3 btn-outline-success">Login</button>
-              </Link>
+              {user && (
+                <img
+                  className="nav-img-width img-fluid rounded-circle "
+                  title={user?.name}
+                  src={
+                    "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  }
+                  alt=""
+                />
+              )}
+              {!user ? (
+                <Link to="/login">
+                  <button className="btn  ms-3 btn-outline-success">
+                    Login
+                  </button>
+                </Link>
+              ) : (
+                <Link onClick={handleLogOut}>
+                  <button className="btn  ms-3 btn-outline-success">
+                    Logout
+                  </button>
+                </Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

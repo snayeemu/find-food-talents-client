@@ -1,11 +1,9 @@
 import React from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import { FaSortNumericUpAlt, FaThumbsUp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const MyCard = ({ chef }) => {
-  console.log(chef);
-  const { id, chefPicture, numberOfRecipes, yearsOfExperience, chefName } =
-    chef;
   return (
     <div className="col-md-4 mb-2">
       <Col>
@@ -22,7 +20,9 @@ const MyCard = ({ chef }) => {
               <FaThumbsUp className="text-success"></FaThumbsUp>{" "}
               <span className="text-secondary"> 1002 likes</span>
             </Card.Text>
-            <Button variant="success">View Recipes</Button>
+            <Link to={`/recipes/${chef.id}`}>
+              <Button variant="success">View Recipes</Button>
+            </Link>
           </Card.Body>
         </Card>
       </Col>

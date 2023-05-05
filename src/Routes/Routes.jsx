@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home/Home";
 import EmailLogin from "../pages/Login/EmaillLogin/EmailLogin";
 import LoginOptions from "../pages/Login/LoginOptions/LoginOptions";
 import NavigationBar from "../pages/shared/NavigationBar/NavigationBar";
+import ShowRecipes from "../pages/ShowRecipes/ShowRecipes";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
       {
         path: "/email-login",
         element: <EmailLogin></EmailLogin>,
+      },
+      {
+        path: "/recipes/:id",
+        element: <ShowRecipes></ShowRecipes>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/recipes/${params.id}`),
       },
     ],
   },

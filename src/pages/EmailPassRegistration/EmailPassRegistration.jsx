@@ -15,7 +15,6 @@ const EmailPassRegistration = () => {
   const handleRegister = (event) => {
     event.preventDefault();
     setError("");
-    console.log({ name, photoUrl, email, password });
     // You can add your form submission logic here
     if (!(email && password)) {
       alert("Email and password is required");

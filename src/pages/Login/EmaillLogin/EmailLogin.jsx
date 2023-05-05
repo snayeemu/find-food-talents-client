@@ -13,7 +13,6 @@ const EmailLogin = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setError("");
-    console.log({ email, password });
     // You can add your form submission logic here
     if (!(email && password)) {
       alert("Please enter your email and password");

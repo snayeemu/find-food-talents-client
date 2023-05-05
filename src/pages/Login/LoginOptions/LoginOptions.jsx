@@ -13,16 +13,14 @@ const LoginOptions = () => {
 
   const googleLogin = () => {
     handleGoogleLogin()
-      .then((result) => {
-        console.log(result.user);
-      })
-      .catch((err) => console.log(err.message));
+      .then((result) => {})
+      .catch();
   };
 
   const gitLogin = () => {
     handleGitLogin()
-      .then((result) => console.log(result.user))
-      .catch((err) => console.log(err.message));
+      .then()
+      .catch();
   };
 
   return (

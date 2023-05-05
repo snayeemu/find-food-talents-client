@@ -17,7 +17,7 @@ const Home = () => {
         setChefs(data);
         setIsLoading(false);
       })
-      .catch((error) => console.log(error.message));
+      .catch();
   }, []);
   return (
     <div>

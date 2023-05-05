@@ -12,9 +12,7 @@ const NavigationBar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const handleLogOut = () => {
-    logOut()
-      .then()
-      .catch((err) => console.log(err.message));
+    logOut().then().catch();
   };
   return (
     <div className="position-relative">

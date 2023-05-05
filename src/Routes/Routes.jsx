@@ -42,7 +42,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/recipes/${params.id}`),
+          fetch(
+            `https://find-food-talent-server-snayeemu.vercel.app/recipes/${params.id}`
+          ),
       },
       {
         path: "/recipes/details",

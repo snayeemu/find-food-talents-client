@@ -11,7 +11,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [chefs, setChefs] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/")
+    fetch("https://find-food-talent-server-snayeemu.vercel.app/")
       .then((res) => res.json())
       .then((data) => {
         setChefs(data);

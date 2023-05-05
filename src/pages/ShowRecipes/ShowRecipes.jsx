@@ -61,6 +61,11 @@ const ShowRecipes = () => {
                       </span>
                     ))}
                   </div>
+                  <div className="text-center mt-3 ">
+                    <button className="btn btn-outline-success ">
+                      Favorite
+                    </button>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

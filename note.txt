@@ -35,8 +35,8 @@ task:
     10. meaningful two more section by me --> done
     11. view recipe button --> done
         only login users, else redirect to login page --> done
-        in details page 
-            banner
+        in details page --> done 
+            banner --> done
                 chef picture, name, short bio/description, likes, number of recipes and years of experience.
                 we can have duplicate recipes
                 will have a favorite button 

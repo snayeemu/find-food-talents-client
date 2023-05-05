@@ -48,7 +48,7 @@ const NavigationBar = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/blog"
+                to="/blogs"
                 className={({ isActive, isPending }) =>
                   isActive
                     ? "text-primary text-decoration-none mx-3"
@@ -57,7 +57,7 @@ const NavigationBar = () => {
                     : "text-secondary text-decoration-none mx-3"
                 }
               >
-                Blog
+                Blogs
               </NavLink>
             </Nav>
             <Nav>

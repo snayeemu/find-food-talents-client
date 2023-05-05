@@ -56,13 +56,13 @@ Bonus:
     4. blogs page will contain answers of 4 questions 
     5. Chef Recipe will be private/protected
         reload will not sent in login page --> done
-    6. lazy load on chef recipe / six cards on the Home page
+    6. lazy load on chef recipe / six cards on the Home page --> done
     7. blogs page --> react-to-pdf --> if not works --> only using code will give marks 
     8. site looks reasonable --> done 
     9. clean and organized code --> done 
 
 try to:
-    host in firebase, netlify has extra steps 
+    host in firebase, netlify has extra steps. 
 
 submit:
     1. client side repo link 

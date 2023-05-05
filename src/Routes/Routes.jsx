@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
+import Blogs from "../pages/Blogs/Blogs";
 import EmailPassRegistration from "../pages/EmailPassRegistration/EmailPassRegistration";
 import Home from "../pages/Home/Home/Home";
 import EmailLogin from "../pages/Login/EmaillLogin/EmailLogin";
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/email-pass-reg",
         element: <EmailPassRegistration></EmailPassRegistration>,
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>,
       },
     ],
   },

@@ -8,7 +8,7 @@ const Blogs = () => {
         <h4>To Download Pdf click in the below red icon:</h4>
         <ReactToPdf className="mx-auto">
           {({
-            toPdf = () => <button onClick={toPdf}>Generate pdf</button>
+            toPdf = () => <button onClick={toPdf}>Generate pdf</button>,
             targetRef,
           }) => (
             <div

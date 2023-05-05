@@ -6,6 +6,7 @@ import EmailLogin from "../pages/Login/EmaillLogin/EmailLogin";
 import LoginOptions from "../pages/Login/LoginOptions/LoginOptions";
 import NavigationBar from "../pages/shared/NavigationBar/NavigationBar";
 import ShowRecipes from "../pages/ShowRecipes/ShowRecipes";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/recipes/:id",
-        element: <ShowRecipes></ShowRecipes>,
+        element: (
+          <PrivateRoute>
+            <ShowRecipes></ShowRecipes>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/recipes/${params.id}`),
       },

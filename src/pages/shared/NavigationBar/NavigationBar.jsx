@@ -65,7 +65,7 @@ const NavigationBar = () => {
               {user && (
                 <img
                   className="nav-img-width img-fluid rounded-circle "
-                  title={user?.name}
+                  title={user?.displayName}
                   src={
                     "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
                   }

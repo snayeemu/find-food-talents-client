@@ -12,9 +12,9 @@ const Footer = () => {
             <Col md={4}>
               <h4>About Us</h4>
               <p className="text-secondary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                accumsan enim euismod, ultrices tellus eu, cursus leo. Nullam
-                eget efficitur purus.
+                Find your perfect chef with our Chef Finder website - browse
+                through top-rated chefs in your area and hire them for your next
+                event or meal.
               </p>
             </Col>
             <Col md={4}>

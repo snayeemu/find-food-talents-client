@@ -6,7 +6,7 @@ const LoginOptions = () => {
   return (
     <div className="">
       <div className="container my-5 text-center">
-        <h2 className="text-success">Login:</h2>
+        <h2 className="text-success">Please Login:</h2>
         <div className="d-flex flex-column">
           <Link to="/email-login">
             <Button variant="outline-primary" className="mb-3">

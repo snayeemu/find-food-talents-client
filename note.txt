@@ -1,0 +1,73 @@
+repo:
+    chef
+    create two private repository
+    .gitignore
+
+task:
+    1. search for 'food recipe website'
+    2. give a unique name
+    3. make a navbar
+        name, home, blog and user profile picture
+        profile pic --> mouse hover --> if set name --> show name
+    4. meaningful footer
+    5. login page 
+        email, password
+        google sign in
+        github sign in
+        A link that will redirect to registration page
+    6. Registration page
+        name
+        email --> no email verification
+        password
+        photo url
+    7. error message --> registration page 
+        a user cannot submit empty email and password
+    8. Home page
+        a banner
+        text one side, picture in other side
+    9. chef section
+        chef picture
+        chef name
+        years of experience
+        numbers of recipes
+        likes --> can be hand coded
+        view recipes button
+    10. meaningful two more section by me 
+    11. view recipe button
+        only login users, else redirect to login page 
+        in details page
+            banner
+                chef picture, name, short bio/description, likes, number of recipes and years of experience.
+                we can have duplicate recipes
+                will have a favorite button 
+    12. favorite button
+        tost will say something,
+        then button will be disabled --> no need to store
+    13. add a data loading spinner
+    14. add a 404 page --> add a image in the 404 page 
+    15. hide firebase from github
+    16. add 'active route' to indicate the route which you are visiting 
+
+
+Bonus:
+    1. meaningful 12 commit, for server-side minimum 5 commit 
+    2. client side meaningful readme.md file --> minimum 5 bullet points + live site link
+    3. home page will be mobile and desktop responsive 
+    4. blogs page will contain answers of 4 questions 
+    5. Chef Recipe will be private/protected
+        reload will not sent in login page 
+    6. lazy load on chef recipe / six cards on the Home page
+    7. blogs page --> react-to-pdf --> if not works --> only using code will give marks 
+    8. site looks reasonable 
+    9. clean and organized code 
+
+try to:
+    host in firebase, netlify has extra steps 
+
+submit:
+    1. client side repo link 
+    2. server side repo link
+    3. live website link
+    
+
+    

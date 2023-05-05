@@ -45,7 +45,8 @@ const ShowRecipes = () => {
           </Col>
         </Row>
       </Card>
-      <Container className="my-3">
+      <Container className="my-3 ">
+        <h2 className="text-success ">Recipes:</h2>
         <Row xs={1} md={2} lg={3} className="g-4">
           {chef.recipes.map((recipe, index) => (
             <Col key={index}>

@@ -18,7 +18,7 @@ const MyCard = ({ chef }) => {
               {chef.numberOfRecipes} recipes
               <br />
               <FaThumbsUp className="text-success"></FaThumbsUp>{" "}
-              <span className="text-secondary"> 1002 likes</span>
+              <span className="text-secondary"> {chef?.likes} likes</span>
             </Card.Text>
             <Link to={`/recipes/${chef.id}`}>
               <Button variant="success">View Recipes</Button>

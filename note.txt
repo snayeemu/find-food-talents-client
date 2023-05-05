@@ -1,41 +1,41 @@
 repo:
-    chef
-    create two private repository
-    .gitignore
+    chef --> ok
+    create two private repository --> ok
+    .gitignore --> done
 
 task:
-    1. search for 'food recipe website'
-    2. give a unique name
-    3. make a navbar
-        name, home, blog and user profile picture
-        profile pic --> mouse hover --> if set name --> show name
-    4. meaningful footer
-    5. login page 
-        email, password
-        google sign in
-        github sign in
-        A link that will redirect to registration page
-    6. Registration page
-        name
-        email --> no email verification
-        password
-        photo url
-    7. error message --> registration page 
-        a user cannot submit empty email and password
-    8. Home page
-        a banner
-        text one side, picture in other side
-    9. chef section
-        chef picture
-        chef name
-        years of experience
-        numbers of recipes
-        likes --> can be hand coded
-        view recipes button
-    10. meaningful two more section by me 
-    11. view recipe button
-        only login users, else redirect to login page 
-        in details page
+    1. search for 'food recipe website' --> done
+    2. give a unique name --> done
+    3. make a navbar --> done
+        name, home, blog and user profile picture --> done
+        profile pic --> mouse hover --> if set name --> show name --> done
+    4. meaningful footer --> done
+    5. login page --> done
+        email, password --> done
+        google sign in --> done
+        github sign in --> done
+        A link that will redirect to registration page --> done
+    6. Registration page --> done
+        name --> done 
+        email --> no email verification --> done
+        password --> done 
+        photo url --> done
+    7. error message --> registration page --> done
+        a user cannot submit empty email and password --> done
+    8. Home page --> done
+        a banner --> done 
+        text one side, picture in other side  --> done
+    9. chef section --> done
+        chef picture --> done 
+        chef name --> done
+        years of experience --> done
+        numbers of recipes --> done
+        likes --> can be hand coded --> done
+        view recipes button --> done
+    10. meaningful two more section by me --> done
+    11. view recipe button --> done
+        only login users, else redirect to login page --> done
+        in details page 
             banner
                 chef picture, name, short bio/description, likes, number of recipes and years of experience.
                 we can have duplicate recipes

@@ -8,11 +8,15 @@ import {
   Image,
   Toast,
   Button,
+  Spinner,
 } from "react-bootstrap";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const ShowRecipes = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const chef = useLoaderData();
+
   const [clickedIndex, setClickedIndex] = useState([]);
   const [show, setShow] = useState(false);
 
@@ -20,6 +24,10 @@ const ShowRecipes = () => {
     setClickedIndex([...clickedIndex, index]);
     setShow(true);
   };
+
+  useEffect(() => {
+    if (chef) setIsLoading(false);
+  }, [chef]);
 
   const { chefPicture, chefName, bio, likes, numberOfRecipes } = chef;
   return (
@@ -62,6 +70,7 @@ const ShowRecipes = () => {
           </Col>
         </Row>
       </Card>
+
       <Container className="my-3 ">
         <Row>
           <Col xs={6}>
@@ -85,6 +94,12 @@ const ShowRecipes = () => {
               </Toast.Body>
             </Toast>
           </Col>
+
+          <Spinner
+            className={`${!isLoading && "d-none"}`}
+            animation="border"
+            variant="success"
+          />
         </Row>
         <h2 className="text-success ">Recipes:</h2>
         <Row xs={1} md={2} lg={3} className="g-4">

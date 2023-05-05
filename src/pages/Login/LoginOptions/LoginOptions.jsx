@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { useContext } from "react";
 import { AuthContext } from "../../../contexts/AuthContext";
@@ -7,9 +7,15 @@ import { AuthContext } from "../../../contexts/AuthContext";
 const LoginOptions = () => {
   const { handleGoogleLogin, handleGitLogin } = useContext(AuthContext);
 
+  const navigateToRecipes = () => {
+    return <Navigate to="/recipes/1" replace={true} />;
+  };
+
   const googleLogin = () => {
     handleGoogleLogin()
-      .then((result) => console.log(result.user))
+      .then((result) => {
+        console.log(result.user);
+      })
       .catch((err) => console.log(err.message));
   };
 

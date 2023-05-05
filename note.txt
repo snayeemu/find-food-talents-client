@@ -44,22 +44,22 @@ task:
         tost will say something, --> done
         then button will be disabled --> no need to store --> done
     13. add a data loading spinner --> done
-    14. add a 404 page --> add a image in the 404 page 
+    14. add a 404 page --> add a image in the 404 page --> done
     15. hide firebase from github --> done
-    16. add 'active route' to indicate the route which you are visiting  -->
+    16. add 'active route' to indicate the route which you are visiting  --> done
 
 
 Bonus:
-    1. meaningful 12 commit, for server-side minimum 5 commit 
+    1. meaningful 12 commit, for server-side minimum 5 commit --> done
     2. client side meaningful readme.md file --> minimum 5 bullet points + live site link
-    3. home page will be mobile and desktop responsive 
+    3. home page will be mobile and desktop responsive --> done
     4. blogs page will contain answers of 4 questions 
     5. Chef Recipe will be private/protected
-        reload will not sent in login page 
+        reload will not sent in login page --> done
     6. lazy load on chef recipe / six cards on the Home page
     7. blogs page --> react-to-pdf --> if not works --> only using code will give marks 
-    8. site looks reasonable 
-    9. clean and organized code 
+    8. site looks reasonable --> done 
+    9. clean and organized code --> done 
 
 try to:
     host in firebase, netlify has extra steps 

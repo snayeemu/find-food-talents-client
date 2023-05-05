@@ -7,15 +7,8 @@ import { Link, useNavigate, NavLink } from "react-router-dom";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
-  //   const active = { home: false, blog: false };
-  //   const [isActive, setIsActive] = useState(active);
-  //   const navigate = useNavigate();
-
-  //   const handleNavigation = (path, key) => {
-  //     navigate(`/${path}`);
-  //     isActive[key] = !isActive[key];
-  //     setIsActive(isActive);
-  //   };
+  const 
+  
   const test = (active) => {
     console.log(active);
   };

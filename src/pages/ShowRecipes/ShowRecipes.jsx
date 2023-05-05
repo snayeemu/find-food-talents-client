@@ -13,7 +13,7 @@ const ShowRecipes = () => {
               <Card>
                 <Card.Body>
                   <Card.Title>{recipe}</Card.Title>
-                  <Link to={`/recipes/${index}`}>
+                  <Link to={`/recipes/details`}>
                     <Button variant="primary">View Recipe</Button>
                   </Link>
                 </Card.Body>

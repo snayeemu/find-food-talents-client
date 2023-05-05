@@ -86,7 +86,7 @@ const ShowRecipes = () => {
                   className="rounded me-2"
                   alt=""
                 />
-                <strong className="me-auto">Congratulations</strong>
+                <strong className="me-auto text-success">Congratulations</strong>
                 <small>Just Now</small>
               </Toast.Header>
               <Toast.Body>

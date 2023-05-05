@@ -51,13 +51,13 @@ task:
 
 Bonus:
     1. meaningful 12 commit, for server-side minimum 5 commit --> done
-    2. client side meaningful readme.md file --> minimum 5 bullet points + live site link
+    2. client side meaningful readme.md file --> minimum 5 bullet points + live site link --> done
     3. home page will be mobile and desktop responsive --> done
-    4. blogs page will contain answers of 4 questions 
-    5. Chef Recipe will be private/protected
+    4. blogs page will contain answers of 4 questions --> done
+    5. Chef Recipe will be private/protected --> done
         reload will not sent in login page --> done
     6. lazy load on chef recipe / six cards on the Home page --> done
-    7. blogs page --> react-to-pdf --> if not works --> only using code will give marks 
+    7. blogs page --> react-to-pdf --> if not works --> only using code will give marks --> done
     8. site looks reasonable --> done 
     9. clean and organized code --> done 
 

@@ -1,5 +1,5 @@
+import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import LayoutMain from "../Layout/LayoutMain";
 import EmailPassRegistration from "../pages/EmailPassRegistration/EmailPassRegistration";
 import Home from "../pages/Home/Home/Home";
 import EmailLogin from "../pages/Login/EmaillLogin/EmailLogin";
@@ -10,10 +10,16 @@ import NavigationBar from "../pages/shared/NavigationBar/NavigationBar";
 import ShowRecipes from "../pages/ShowRecipes/ShowRecipes";
 import PrivateRoute from "./PrivateRoute";
 
+const LayoutMain = lazy(() => import("../Layout/LayoutMain"));
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LayoutMain></LayoutMain>,
+    element: (
+      <Suspense fallback="loading...">
+        <LayoutMain></LayoutMain>
+      </Suspense>
+    ),
     children: [
       {
         path: "/",

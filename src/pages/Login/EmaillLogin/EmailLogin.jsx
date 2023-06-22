@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../contexts/AuthContext";
 
 const EmailLogin = () => {
@@ -9,6 +9,7 @@ const EmailLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -19,7 +20,9 @@ const EmailLogin = () => {
       return;
     }
     loginUser(email, password)
-      .then()
+      .then(() => {
+        navigate("/recipes/1");
+      })
       .catch((err) => setError(err.message));
   };
   return (

@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
+        path: "/register",
+        element: <EmailPassRegistration></EmailPassRegistration>,
+      },
+      {
         path: "/login",
         element: <LoginOptions></LoginOptions>,
       },

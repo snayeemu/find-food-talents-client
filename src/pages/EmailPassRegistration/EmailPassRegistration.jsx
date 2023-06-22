@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../contexts/AuthContext";
 
 const EmailPassRegistration = () => {
@@ -11,6 +12,7 @@ const EmailPassRegistration = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -21,7 +23,9 @@ const EmailPassRegistration = () => {
       return;
     }
     registerUser(email, password)
-      .then()
+      .then(() => {
+        navigate("/");
+      })
       .catch((err) => setError(err.message));
     if (name && photoUrl)
       profileUpdate(name, photoUrl)
